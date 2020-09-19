@@ -1,0 +1,5 @@
+$q2="select * from cities where stateid=1;";
+$cities=mysqli_query($con,$q2);
+$size=sizeof($cities);
+echo"<option>$size</option>";
+mysqli_close($con);
